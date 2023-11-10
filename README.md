@@ -1,4 +1,4 @@
-![Logo](https://images.shiksha.com/mediadata/images/articles/1652097279phpcHa5PV.jpeg)
+![Logo](https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iO1E2bPiwKKY/v1/-1x-1.jpg)
 
 # DATA SCIENCE - Clustering market stocks using K-Means
 # Machine Learning
@@ -7,47 +7,37 @@ In this project I will be extracting live Stock Market data from `Yahoo Finance`
 
 I will analize their performance since 2020 (beggining of Covid-19).
 
-The purpose is to find similarities among various companies using their stock stock market prices and then group them into different clusters using the K-means algorithm.
+The purpose is to find similarities among various companies using their stock stock market prices/attributes and then group them into different clusters using the K-means algorithm.
 
-This is an unsuppervised machine learning problem and I will use an **`Unsuppervised Machine Learning`** technique with the help of the K-means algorithm.
+This is an unsuppervised ML problem so I will use an **`Unsuppervised Machine Learning`** technique with the help of the K-means algorithm.
 
 ## Context
 
-There is a need to identify the veracity or falsity of the statistical data in the bank notes report.
+The need to research the equity market as of 2020, when the pandemic begins, is presented.
 
-It is recommended that models be defined to verify whether the new data to be entered can be classified as genuine (1) or false (0).
+It is intended to group the stocks by common characteristics so that the research department can define a study for the construction of investment portfolios.
 
 ## Dataset
 
-The [dataset](https://github.com/fedeandresg/Detecting-fraudulent-bank-notes-using-ML/blob/main/BankNote_Authentication.csv) has information on statistical measures assigned to each bank note. It has 1372  rows (bank notes) and 5 columns (atribites-statistical measures).
+We will use yahoo finance as a data source.
 
-Source: https://www.kaggle.com/ritesaluja/bank-note-authentication-uci-data
+[Link](https://finance.yahoo.com/)
 
-UCI: http://archive.ics.uci.edu/ml/datasets/banknote+authentication
+## Data analysis
 
-## Data preprocessing
+An analysis of the attributes is carried out for each of the stocks. 
 
-No **`Data preprocessing`** tasks were performed, because the data are scarce and the target to be predicted `Class` is balanced.
-Univariate and bivariate analyses were carried out to determine the frequency distributions of each attribute and the correlation between them.
+In particular, 2 stocks were selected to evaluate their historical evolution, difference between opening and closing prices and volume.
 
-They can be viewed at the following link:
+[Notebook](https://github.com/fedeandresg/clustering-market-stocks/blob/main/Stock_Market_Clustering.ipynb)
 
-[notebook](https://github.com/fedeandresg/Detecting-fraudulent-bank-notes-using-ML/blob/main/bank_notes.ipynb)
+## Clustering model - Machine Learning
 
-## Classification models - Machine Learning
+For the project, the K-means algorithm was used to group the stocks. It was decided to use 6 clusters. 
 
-The following classification models were used for the project:
+Values were normalized to improve the consistency of the analysis and the dimensionality reduction technique (PCA) was applied. 
 
-- Logistic regression
-- Support Vector Machine
-- Support Vector Machine (rbf kernel)
-- Randon Forest Classifier
-- Kneighbors Classifier
-- Multilayer Perceptron (neural network)
+Also a pipeline was defined for the process and finally the structure of the clusters was plotted.
 
-All models presented great results in terms of accuracy. The confusion matrices confirm the fact that they all predict the label 'Class' very well.
-
-They can be viewed at the following link:
-
-[notebook](https://github.com/fedeandresg/Detecting-fraudulent-bank-notes-using-ML/blob/main/bank_notes.ipynb)
+[Notebook](https://github.com/fedeandresg/clustering-market-stocks/blob/main/Stock_Market_Clustering.ipynb)
 
