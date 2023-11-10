@@ -7,9 +7,9 @@ In this project I will be extracting live Stock Market data from `Yahoo Finance`
 
 I will analize their performance since 2020 (beggining of Covid-19).
 
-The purpose is to find similarities among various companies using their stock stock market prices/attributes and then group them into different clusters using the K-means algorithm.
+The purpose is to find similarities among various companies using their stock market prices/attributes and then group them into different clusters using the K-means algorithm.
 
-This is an unsuppervised ML problem so I will use an **`Unsuppervised Machine Learning`** technique with the help of the K-means algorithm.
+This is an unsuppervised problem so I will use an **`Unsuppervised Machine Learning`** technique with the help of the **K-means algorithm**.
 
 ## Context
 
